@@ -1,0 +1,7 @@
+services:
+    dh.artis_simple_product_variant_hotfix_plugin.form.extension.product_type:
+        class: DH\ArtisSimpleProductVariantOverwriteHotfixPlugin\Form\ProductTypeExtension
+        arguments:
+            - '@doctrine.orm.default_entity_manager'
+        tags:
+            - { name: form.type_extension }
