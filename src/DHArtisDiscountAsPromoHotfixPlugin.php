@@ -7,7 +7,7 @@ namespace DH\ArtisDiscountAsPromoHotfixPlugin;
 use Sylius\Bundle\CoreBundle\Application\SyliusPluginTrait;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-final class ArtisDiscountAsPromoHotfixPlugin extends Bundle
+final class DHArtisDiscountAsPromoHotfixPlugin extends Bundle
 {
     use SyliusPluginTrait;
 }

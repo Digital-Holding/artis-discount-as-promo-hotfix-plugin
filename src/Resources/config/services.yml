@@ -1,7 +1,13 @@
 services:
-    dh.artis_simple_product_variant_hotfix_plugin.form.extension.product_type:
-        class: DH\ArtisSimpleProductVariantOverwriteHotfixPlugin\Form\ProductTypeExtension
+    # dh.artis.discount_as_promo_hotfix_plugin.subscriber:
+    #     class: DH\ArtisDiscountAsPromoHotfixPlugin\Subscriber\OrderDiscountHotfixEventSubscriber
+    #     arguments:
+    #         - '@doctrine.orm.default_entity_manager'
+
+    dh.artis.discount_as_promo_hotfix_plugin.form.extension.new_order_type:
+        class: DH\ArtisDiscountAsPromoHotfixPlugin\Form\NewOrderTypeExtension
         arguments:
             - '@doctrine.orm.default_entity_manager'
+            - '@request_stack'
         tags:
             - { name: form.type_extension }
