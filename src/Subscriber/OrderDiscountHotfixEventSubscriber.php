@@ -66,7 +66,7 @@ class OrderDiscountHotfixEventSubscriber implements EventSubscriberInterface
         return $route['channelCode'];
     }
 
-    protected function getAdjustmentsSum($item)
+    protected function getAdjustmentsSum($data)
     {
         $sum = 0;
         if (isset($data['adjustments']) && is_array($data['adjustments'])) {
